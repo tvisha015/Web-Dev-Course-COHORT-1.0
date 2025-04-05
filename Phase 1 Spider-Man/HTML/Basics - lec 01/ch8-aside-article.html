@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            margin: 20px auto;
+        }
+        main {
+            flex: 2;
+            padding: 20px;
+        }
+        aside {
+            flex: 1;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        footer {
+            width: 100%;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <main>
+            <article>
+                <header>
+                    <h2>Blog Post Title</h2>
+                    <p>Posted on February 25, 2025</p>
+                </header>
+                <p>This is the content of the blog post. It includes information about various topics in a structured and readable way.</p>
+                <footer>
+                    <p>Written by: Author Name</p>
+                </footer>
+            </article>
+        </main>
+        
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#">Another Blog Post</a></li>
+                <li><a href="#">Interesting Article</a></li>
+                <li><a href="#">External Resource</a></li>
+            </ul>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

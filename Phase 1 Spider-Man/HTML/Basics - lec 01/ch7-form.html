@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+            height: 100vh;
+            margin: 0;
+        }
+        .form{
+            border: 1px solid black;
+            width: 400px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+    <form action="">
+        <label for="uname">Username : </label>
+        <input type="text" id="uname" placeholder="Enter Email/Username">
+        <br>
+        <br>
+        <label for="pwd">Password : </label>
+        <input type="password" name="pwd" id="pwd" pattern=".{8,8}" title="Enter 8 characters long password" required placeholder="Enter password">
+        <br>
+        <br>
+        <label for="number">Phone number : </label>
+        <input type="tel" id="number" name="number" placeholder="Enter phone no." pattern="[0-9]{10}" required>
+        <br>
+        <br>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter any message...">
+        </textarea>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
